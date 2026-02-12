@@ -1,17 +1,42 @@
-[
+{
+		"name": "Atomic Bomb",
+		"unitType": "Atomic Bomber",
+		"movement": 1,
+		"strength": 150,
+		"rangedStrength": 150,
+		"range": 10,
+		"cost": 900,
+		"obsoleteTech": "Advanced Ballistics",
+		"requiredTech": "Nuclear Fission",
+		"upgradesTo": "Nuclear Missile",
+		"promotions": [
+			"Evasion"
+		],
+		"uniques": [
+			"Consumes [1] [Uranium]",
+			"Nuclear weapon of Strength [1]",
+			"Only available <if [Nuclear Testing Site] is constructed>",
+			"Self-destructs when attacking",
+			"Blast radius [2]"
+		],
+		"attackSound": "nuke"
+	},
+
 	{
-		"name": "Phasers",
-		"unitType": "Ranged",
-		"uniqueTo": "Aliens",
-		"replaces": "Machine Gun",
-		"movement": 2,
-		"strength": 90,
-		"rangedStrength": 36,
-		"range": 2,
-		"cost": 500,
-		"requiredTech": "Ballistics",
-		"requiredResource": "Uranium",
-		"promotions": ["Logistics","Accuracy I"],
-		"attackSound": "phasers"
-	}
-]
+		"name": "Nuclear Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 250,
+		"rangedStrength": 250,
+		"range": 12,
+		"cost": 1500,
+		"requiredTech": "Advanced Ballistics",
+		"upgradesTo": "Orbital Strike",
+		"uniques": [
+			"Nuclear weapon of Strength [2]",
+			"Only available <if [Nuclear Testing Site] is constructed>",
+			"Blast radius [2]",
+			"Consumes [2] [Uranium]"
+		],
+		"attackSound": "nuke"
+	},
