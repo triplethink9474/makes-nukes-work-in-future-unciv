@@ -40,3 +40,21 @@
 		],
 		"attackSound": "nuke"
 	},
+
+
+	{
+		"name": "Orbital Strike",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 500,
+		"rangedStrength": 500,
+		"range": 18,
+		"cost": 2000,
+		"requiredTech": "Particle Physics",
+		"uniques": [
+			"Nuclear weapon of Strength [2]",
+			"Only available <if [Nuclear Testing Site] is constructed>",
+			"Blast radius [3]"
+		],
+		"attackSound": "nuke"
+	},
